@@ -9,8 +9,8 @@ h1 {
     gap: 100px;
     margin-top: 20px;
 }
-.calendar {
-
+.calendar table{
+    margin: auto 0;
 }
 
 .events, ul {

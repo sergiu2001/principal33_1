@@ -7,7 +7,9 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Calendar</title>
     <link rel="stylesheet" href="index.css">
+    <script src="functions.js"></script>
 </head>
+
 <body>
 <header>
     <h1>Calendar</h1>
@@ -15,6 +17,7 @@
 <main>
     <div class="content__container">
         <div class="calendar">
+            <h2>July</h2>
             <table>
                 <thead>
                 <tr>
@@ -50,7 +53,7 @@
                     <td>15</td>
                     <td>16</td>
                     <td>17</td>
-                    <td>18</td>
+                    <td> <button onclick="alertPopUp()">18</button> </td>
                     <td>19</td>
                     <td>20</td>
                     <td>21</td>
@@ -73,7 +76,7 @@
             </table>
         </div>
         <div class="events">
-            <h2>Events</h2>
+            <h3>Events</h3>
             <li>
                 <ul><time>8:00</time> Mani</ul>
                 <ul><time>10:00</time> Pedi</ul>
