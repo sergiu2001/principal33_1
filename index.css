@@ -1,0 +1,22 @@
+h1 {
+    margin-left: 100px;
+}
+
+.content__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+    margin-top: 20px;
+}
+.calendar {
+
+}
+
+.events, ul {
+    padding: 0;
+}
+
+.events li{
+    list-style-type: none;
+}
