@@ -31,7 +31,7 @@ function createTable(limit) {
 function eventPopUp(){
     document.querySelectorAll('.day').forEach(item => {
         item.addEventListener('click', event => {
-            console.log(event.target.dataset.date, event.target.innerText);
+            alert(event.target.innerText);
         })
     })
 }
