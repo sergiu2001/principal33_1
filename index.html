@@ -38,49 +38,58 @@
                 </thead>
                 <tbody>
                 <tr>
-                    <td onclick="alertPopUp(1)">1</td>
-                    <td onclick="alertPopUp(2)">2</td>
-                    <td onclick="alertPopUp(3)">3</td>
-                    <td onclick="alertPopUp(4)">4</td>
-                    <td onclick="alertPopUp(5)">5</td>
-                    <td onclick="alertPopUp(6)">6</td>
-                    <td onclick="alertPopUp(7)">7</td>
+                    <td class="day" data-date="2022-07-01">1</td>
+                    <td class="day" data-date="2022-07-02">2</td>
+                    <td class="day" data-date="2022-07-03">3</td>
+                    <td class="day" data-date="2022-07-04">4</td>
+                    <td class="day" data-date="2022-07-05">5</td>
+                    <td class="day" data-date="2022-07-06">6</td>
+                    <td class="day" data-date="2022-07-07">7</td>
                 </tr>
                 <tr>
-                    <td onclick="alertPopUp(8)">8</td>
-                    <td onclick="alertPopUp(9)">9</td>
-                    <td onclick="alertPopUp(10)">10</td>
-                    <td onclick="alertPopUp(11)">11</td>
-                    <td onclick="alertPopUp(12)">12</td>
-                    <td onclick="alertPopUp(13)">13</td>
-                    <td onclick="alertPopUp(14)">14</td>
+                    <td class="day" data-date="2022-07-08">8</td>
+                    <td class="day" data-date="2022-07-09">9</td>
+                    <td class="day" data-date="2022-07-10">10</td>
+                    <td class="day" data-date="2022-07-11">11</td>
+                    <td class="day" data-date="2022-07-12">12</td>
+                    <td class="day" data-date="2022-07-13">13</td>
+                    <td class="day" data-date="2022-07-14">14</td>
                 </tr>
                 <tr>
-                    <td onclick="alertPopUp(15)">15</td>
-                    <td onclick="alertPopUp(16)">16</td>
-                    <td onclick="alertPopUp(17)">17</td>
-                    <td onclick="alertPopUp(18)">18</td>
-                    <td onclick="alertPopUp(19)">19</td>
-                    <td onclick="alertPopUp(20)">20</td>
-                    <td onclick="alertPopUp(21)">21</td>
+                    <td class="day" data-date="2022-07-15">15</td>
+                    <td class="day" data-date="2022-07-16">16</td>
+                    <td class="day" data-date="2022-07-17">17</td>
+                    <td class="day" data-date="2022-07-18">18</td>
+                    <td class="day" data-date="2022-07-19">19</td>
+                    <td class="day" data-date="2022-07-"20>20</td>
+                    <td class="day" data-date="2022-07-21">21</td>
                 </tr>
                 <tr>
-                    <td onclick="alertPopUp(22)">22</td>
-                    <td onclick="alertPopUp(23)">23</td>
-                    <td onclick="alertPopUp(24)">24</td>
-                    <td onclick="alertPopUp(25)">25</td>
-                    <td onclick="alertPopUp(26)">26</td>
-                    <td onclick="alertPopUp(27)">27</td>
-                    <td onclick="alertPopUp(28)">28</td>
+                    <td class="day" data-date="2022-07-22">22</td>
+                    <td class="day" data-date="2022-07-23">23</td>
+                    <td class="day" data-date="2022-07-24">24</td>
+                    <td class="day" data-date="2022-07-25">25</td>
+                    <td class="day" data-date="2022-07-26">26</td>
+                    <td class="day" data-date="2022-07-27">27</td>
+                    <td class="day" data-date="2022-07-28">28</td>
                 </tr>
                 <tr>
-                    <td onclick="alertPopUp(29)">29</td>
-                    <td onclick="alertPopUp(30)">30</td>
-                    <td onclick="alertPopUp(31)">31</td>
+                    <td class="day" data-date="2022-07-29">29</td>
+                    <td class="day" data-date="2022-07-30">30</td>
+                    <td class="day" data-date="2022-07-31">31</td>
                 </tr>
                 </tbody>
             </table>
         </div>
+
+        <script>
+            document.querySelectorAll('.day').forEach(item => {
+                item.addEventListener('click', event => {
+                    alert(event.target.innerText);
+                })
+            })
+        </script>
+
         <div class="events">
             <h3>Events</h3>
             <ul>
