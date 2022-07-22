@@ -61,7 +61,7 @@ h1 {
     text-align: center;
 }
 
-h2 {
+.calendar__date {
     text-align: center;
     padding: 10px 0;
     margin: 0;
@@ -71,7 +71,7 @@ h2 {
     transition: width ease-out 2s;
 }
 
-h2:hover {
+.calendar__date:hover {
     width: 100%;
 }
 

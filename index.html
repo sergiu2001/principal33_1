@@ -10,7 +10,7 @@
     <script src="functions.js"></script>
 </head>
 
-<body>
+<body onload="eventPopUp()">
 <header>
     <h1>Calendar</h1>
 </header>
@@ -18,10 +18,13 @@
     <div class="content__container">
         <div class="calendar">
             <div class="calendar__nav">
-                <h2>July</h2>
+                <div class="calendar__date">
+                    <div class="calendar__m">July</div>
+                    <div class="calendar__y">2022</div>
+                </div>
                 <div class="calendar__nav--arrows">
-                    <button type="button"><</button>
-                    <button type="button">></button>
+                    <button class="calendar__l" type="button" onclick="prevMonth()"><</button>
+                    <button class="calendar__r" type="button">></button>
                 </div>
             </div>
             <table class="calendar__content">
@@ -81,13 +84,8 @@
                 </tbody>
             </table>
         </div>
-
-        <script>
-            eventPopUp();
-        </script>
-
         <div class="events">
-            <h3>Events</h3>
+            <h2>Events</h2>
             <ul>
                 <li>
                     <time>8:00</time>
