@@ -25,7 +25,7 @@ h1 {
     align-items: center;
     gap: 200px;
     padding-top: 150px;
-    font-size: 30px;
+    font-size: 40px;
 }
 
 .calendar {
@@ -42,7 +42,7 @@ h1 {
 
 .calendar__nav--arrows {
     position: absolute;
-    margin-left: 370px;
+    margin-left: 500px;
 }
 
 .calendar__nav--arrows button {
@@ -65,7 +65,7 @@ h1 {
     text-align: center;
     padding: 10px 0;
     margin: 0;
-    width: 120px;
+    width: 170px;
     height: 100%;
     background-color: #6a58a0;
     transition: width ease-out 2s;

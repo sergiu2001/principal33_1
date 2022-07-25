@@ -24,19 +24,23 @@ function eventPopUp() {
 
 var months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
 today = new Date();
-var currentM = today.getMonth()+1;
+var currentM = today.getMonth();
 var currentY = today.getFullYear();
 
-function prevMonth() {
+function prevMonth(){
     currentY = (currentM === 0) ? currentY - 1 : currentY;
     currentM = (currentM === 0) ? 11: currentM -1;
-    document.getElementsByClassName('.calendar__m').innerText = months[currentM];
-    document.getElementsByClassName('.calendar__y').innerText = currentY;
+    const divM = document.querySelector(".calendar__m");
+    divM.innerHTML = months[currentM];
+    const divY = document.querySelector(".calendar__y");
+    divY.innerHTML = currentY;
 }
 
 function nextMonth() {
     currentY = (currentM === 11) ? currentY + 1 : currentY;
     currentM = (currentM + 1) % 12;
-    document.getElementsByClassName('.calendar__m').innerText = currentM;
-    document.getElementsByClassName('.calendar__y').innerText = currentY;
+    const divM = document.querySelector(".calendar__m");
+    divM.innerHTML = months[currentM];
+    const divY = document.querySelector(".calendar__y");
+    divY.innerHTML = currentY;
 }
